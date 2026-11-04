@@ -28,8 +28,8 @@
 - CV adapté, lettre de motivation et réponses de formulaire : dans la langue de l'offre
   (français pour une offre en français, anglais pour une offre en anglais). Cette règle
   prime sur `language.output` pour ces documents.
-- Pour une offre VIE, vérifier et signaler la date de début, la durée de la mission et le
-  pays d'affectation dans le rapport.
+- Pour une offre VIE ou de stage, vérifier et signaler la date de début, la durée (au moins
+  675 h pour un stage de fin d'études) et le pays dans le rapport.
 
 ## Custom Workflows
 

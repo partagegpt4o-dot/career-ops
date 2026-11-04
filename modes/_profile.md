@@ -2,18 +2,20 @@
 
 <!-- THIS FILE IS YOURS. It will NEVER be auto-updated.
      Candidat : Raphaël De Michiel. Recherche : VIE (Volontariat International en
-     Entreprise) en aéronautique / spatial, à partir de l'été 2027. -->
+     Entreprise) ET stage de fin d'études d'ingénieur, en aéronautique / spatial,
+     à partir de l'été 2027. -->
 
 ## Your Target Roles
 
 Contexte : élève ingénieur en fin de cursus (double diplôme ESILV–UQAC), sans expérience
-à temps plein. Le niveau visé est **jeune diplômé / VIE / stage de fin d'études** : un
+à temps plein. Deux types de contrats sont visés à égalité : **VIE** et **stage de fin d'études d'ingénieur**
+(675 h minimum, à partir de 07/2027). Le niveau visé est **jeune diplômé / VIE / stage de fin d'études** : un
 intitulé "Junior", "Graduate", "VIE" ou "stage de fin d'études" est une cible, pas un
 signal négatif. Un poste demandant 3 ans d'expérience ou plus est un mauvais fit.
 
 | Archetype | Thematic axes | What they buy |
 |-----------|---------------|---------------|
-| **Ingénieur mécanique / aéronautique (VIE)** | Conception, CAO (CATIA, SolidWorks), calcul (éléments finis, ANSYS), mécanique des fluides | Un jeune ingénieur mécanique solide, mobile, passionné d'aviation |
+| **Ingénieur mécanique / aéronautique (VIE ou stage de fin d'études)** | Conception, CAO (CATIA, SolidWorks), calcul (éléments finis, ANSYS), mécanique des fluides | Un jeune ingénieur mécanique solide, mobile, passionné d'aviation |
 | **Ingénieur projet technique, maintenance / MRO aéronautique** | Pilotage de projet, analyse des besoins, coordination fournisseurs, terrain avec les mécaniciens | Quelqu'un qui fait aboutir un projet concret sur le terrain |
 | **Ingénieur systèmes spatiaux / satellite** | CubeSat, mécanique orbitale, propulsion spatiale | Un profil mécanique avec une première expérience satellite |
 
@@ -32,7 +34,7 @@ MRO, compagnies, spatial). Hors de ce secteur, l'axe "archetype fit" est plafonn
 
 Passionné d'aviation depuis l'enfance (PPL en cours), il a choisi l'ingénierie pour comprendre
 de l'intérieur les machines qu'il pilote. Chez Air France Industries il a aimé mener un projet
-concret au contact des mécaniciens. Il cherche un VIE en aéronautique ou dans le spatial, au
+concret au contact des mécaniciens. Il cherche un VIE ou un stage de fin d'études en aéronautique ou dans le spatial, au
 sein d'une équipe internationale, à partir de l'été 2027.
 
 ## Your Cross-cutting Advantage
@@ -48,8 +50,9 @@ Pas de portfolio en ligne pour l'instant.
 ## Your Comp Targets
 
 L'indemnité d'un VIE est fixée par Business France selon le pays d'affectation : elle ne se
-négocie pas. Ne pas pénaliser une offre VIE sur la rémunération. Pour un poste hors VIE
-(graduate, stage), se référer au marché local du pays.
+négocie pas. Ne pas pénaliser une offre VIE sur la rémunération. Pour un stage de fin d'études,
+la gratification suit les règles du pays : ne pas pénaliser une offre sur ce point, sauf
+stage non rémunéré à l'étranger (à signaler). Pour un poste graduate, se référer au marché local.
 
 ## Your Negotiation Scripts
 
@@ -63,6 +66,6 @@ de la mission, logement et prise en charge du déménagement.
 Actuellement basé à Chicoutimi (Québec). Mobilité internationale totale.
 
 **In evaluations (scoring):**
-- Sur site dans une zone visée → **5.0** (le VIE implique un poste sur site à l'étranger)
+- Sur site dans une zone visée → **5.0** (VIE et stage se font sur site)
 - Sur site hors des zones visées (Asie, Moyen-Orient, Amérique du Sud, Afrique) → **3.0**
 - Date de début avant l'été 2027 → signaler clairement, c'est un point bloquant à vérifier

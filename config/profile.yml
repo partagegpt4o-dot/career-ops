@@ -43,6 +43,7 @@ target_roles:
     - "VIE Ingénieur aéronautique"
     - "VIE Ingénieur aérospatial / spatial"
     - "VIE Ingénieur projet"
+    - "Stage de fin d'études ingénieur aéronautique"
     - "Graduate Aerospace Engineer"
   # Archetypes help the evaluation system score fit
   archetypes:
