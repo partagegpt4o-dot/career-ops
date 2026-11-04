@@ -2311,7 +2311,7 @@ tracked_companies:
   - name: 'Safran'
     careers_url: https://www.safran-group.com/jobs
     scan_method: websearch
-    scan_query: 'site:safran-group.com/jobs VIE OR stage OR internship ingénieur'
+    scan_query: 'site:safran-group.com/fr/offres OR site:safran-group.com/jobs stage OR VIE ingénieur 2027'
     enabled: true
 
   - name: 'Thales'
