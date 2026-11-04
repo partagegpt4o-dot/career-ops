@@ -661,15 +661,13 @@ title_filter:
     - "Volontariat International"
     - "International Volunteer"
     - "Graduate Engineer"
-    - "Aerospace Engineer"
-    - "Aeronautical Engineer"
-    - "Mechanical Engineer"
-    - "Ingénieur mécanique"
-    - "Ingénieur aéronautique"
-    - "Ingénieur projet"
-    - "Spacecraft"
-    - "Satellite"
-    - "Propulsion"
+    - "Graduate Program"
+    - "Graduate Programme"
+    - "Stagiaire"
+    - "Trainee"
+    - "Praktikum"
+    - "Praktikant"
+    - "Placement Student"
   negative:
     # [CUSTOMIZE] Add keywords for roles you want to exclude
     # Whole-word: a bare "Intern" is a substring, so it also rejected every
@@ -703,8 +701,6 @@ title_filter:
     # in title_filter.positive ("KI", "Künstliche Intelligenz") match them, so
     # without these a scan of one big employer returns mostly student ads.
     - "Werkstudent"
-    - "Praktikant"
-    - "Praktikum"
     - "Masterarbeit"
     - "Bachelorarbeit"
     - "Abschlussarbeit"
@@ -729,14 +725,23 @@ title_filter:
     # excluded and the shorter negative bought nothing for them.
     - "Customer Care Agent"
     - "Kundenbetreuung"
-  seniority_boost:
-    # These prefixes add relevance but are not required
-    - "Senior"
-    - "Staff"
-    - "Principal"
-    - "Lead"
-    - "Head"
-    - "Director"
+    # Raphaël : ni alternance ni postes confirmés
+    - "Alternance"
+    - "Alternant"
+    - "Apprenti"
+    - "Apprentissage"
+    - "Apprentice"
+    - "word:Senior"
+    - "word:Sr"
+    - "word:Staff"
+    - "word:Principal"
+    - "word:Manager"
+    - "word:Director"
+    - "Head of"
+    - "Welder"
+    - "Upper Stage"
+    - "Stage 0"
+    - "Stage Separation"
 
 # -- Title filter overrides (optional, scan-ats-full.mjs only) --
 # The reverse ATS sweep (scan-ats-full.mjs) applies ONE global title_filter
@@ -2298,11 +2303,9 @@ search_queries:
 
 tracked_companies:
 
-  # -- Raphaël : employeurs aéronautique / spatial (scan par WebSearch) --
+  # -- Raphaël : employeurs aéronautique / spatial (ATS vérifiés le 2026-11-04 ; scan_method: websearch = pas d'ATS lisible) --
   - name: 'Airbus'
-    careers_url: https://www.airbus.com/en/careers
-    scan_method: websearch
-    scan_query: 'site:ag.wd3.myworkdayjobs.com OR site:airbus.com VIE OR internship OR "graduate" engineer'
+    careers_url: https://ag.wd3.myworkdayjobs.com/Airbus
     enabled: true
 
   - name: 'Safran'
@@ -2313,8 +2316,7 @@ tracked_companies:
 
   - name: 'Thales'
     careers_url: https://careers.thalesgroup.com
-    scan_method: websearch
-    scan_query: 'site:careers.thalesgroup.com OR site:thalesgroup.com VIE OR internship OR stage engineer'
+    provider: phenom
     enabled: true
 
   - name: 'Dassault Aviation'
@@ -2324,27 +2326,22 @@ tracked_companies:
     enabled: true
 
   - name: 'ArianeGroup'
-    careers_url: https://www.ariane.group/fr/carrieres/
-    scan_method: websearch
-    scan_query: 'ArianeGroup VIE OR stage OR internship ingénieur'
+    careers_url: https://arianegroup.wd3.myworkdayjobs.com/EXTERNALALL
     enabled: true
 
   - name: 'CAE'
-    careers_url: https://www.cae.com/careers/explore-careers
-    scan_method: websearch
-    scan_query: 'CAE careers internship OR stage OR co-op engineer Montreal'
+    careers_url: https://cae.wd3.myworkdayjobs.com/career
     enabled: true
 
   - name: 'Bombardier'
-    careers_url: https://jobs.bombardier.com/
-    scan_method: websearch
-    scan_query: 'site:jobs.bombardier.com intern OR stage OR co-op engineering'
+    careers_url: https://jobs.bombardier.com
+    provider: successfactors
+    api: https://jobs.bombardier.com
     enabled: true
 
-  - name: 'Pratt & Whitney Canada (RTX)'
+  - name: 'RTX (Pratt & Whitney, Collins Aerospace, Raytheon)'
     careers_url: https://careers.rtx.com
-    scan_method: websearch
-    scan_query: '"Pratt & Whitney Canada" stage OR internship OR co-op engineering Longueuil'
+    provider: phenom
     enabled: true
 
   - name: 'MDA Space'
@@ -2360,28 +2357,23 @@ tracked_companies:
     enabled: true
 
   - name: 'Boeing'
-    careers_url: https://jobs.boeing.com
-    scan_method: websearch
-    scan_query: 'site:jobs.boeing.com intern OR graduate engineer'
+    careers_url: https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS
     enabled: true
 
   - name: 'Rolls-Royce'
-    careers_url: https://careers.rolls-royce.com
-    scan_method: websearch
-    scan_query: 'site:careers.rolls-royce.com graduate OR internship engineer aerospace'
+    careers_url: https://rollsroyce.wd3.myworkdayjobs.com/Professional
     enabled: true
 
   - name: 'GE Aerospace'
     careers_url: https://careers.geaerospace.com
-    scan_method: websearch
-    scan_query: 'site:careers.geaerospace.com intern OR "engineering development program"'
+    provider: phenom
     enabled: true
 
   - name: 'Collins Aerospace (RTX)'
     careers_url: https://careers.rtx.com
     scan_method: websearch
     scan_query: '"Collins Aerospace" VIE OR internship OR stage engineer'
-    enabled: true
+    enabled: false  # couvert par l'entrée RTX (même site carrières)
 
   - name: 'MBDA'
     careers_url: https://careers.mbda-systems.com
@@ -2420,33 +2412,27 @@ tracked_companies:
     enabled: true
 
   - name: 'SpaceX'
-    careers_url: https://www.spacex.com/careers
-    scan_method: websearch
-    scan_query: 'site:boards.greenhouse.io/spacex intern OR "new grad" engineer'
+    careers_url: https://boards.greenhouse.io/spacex
+    max_response_mb: 40
     enabled: true
 
   - name: 'Rocket Lab'
-    careers_url: https://www.rocketlabusa.com/careers/
-    scan_method: websearch
-    scan_query: '"Rocket Lab" intern OR graduate engineer'
+    careers_url: https://boards.greenhouse.io/rocketlab
     enabled: true
 
   - name: 'Blue Origin'
-    careers_url: https://www.blueorigin.com/careers
-    scan_method: websearch
-    scan_query: '"Blue Origin" intern OR "early career" engineer'
+    careers_url: https://blueorigin.wd5.myworkdayjobs.com/BlueOrigin
     enabled: true
 
   - name: 'Eutelsat OneWeb'
-    careers_url: https://www.eutelsat.com/en/group/careers.html
-    scan_method: websearch
-    scan_query: 'Eutelsat VIE OR stage OR internship engineer'
+    careers_url: https://careers.eutelsat.com
+    provider: successfactors
+    api: https://careers.eutelsat.com
     enabled: true
 
   - name: 'Exotrail'
-    careers_url: https://exotrail.com/careers
-    scan_method: websearch
-    scan_query: 'Exotrail stage OR internship OR VIE'
+    careers_url: https://careers.exotrail.com
+    provider: teamtailor
     enabled: true
 
 
