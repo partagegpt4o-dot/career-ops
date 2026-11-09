@@ -2317,6 +2317,7 @@ tracked_companies:
   - name: 'Thales'
     careers_url: https://careers.thalesgroup.com
     provider: phenom
+    max_pages: 40
     enabled: true
 
   - name: 'Dassault Aviation'
